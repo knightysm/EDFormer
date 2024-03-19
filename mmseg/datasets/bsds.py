@@ -1,7 +1,8 @@
 from mmseg.registry import DATASETS
 from .basesegdataset import BaseSegDataset
 
-@DATASETS.regiters_module()
+
+@DATASETS.register_module()
 class BSDSDataset(BaseSegDataset):
     METAINFO = dict(
         classes=('background', 'edge'),
